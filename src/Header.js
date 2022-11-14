@@ -8,7 +8,7 @@ import { auth } from './firebase';
 
 
 function Header() {
-    const [{basket, user}, dispatch]=useStateVlue();
+    const [{basket, user}]=useStateVlue();
     
     const handleAhthentication = ()=>{
         if(user){
@@ -31,10 +31,6 @@ function Header() {
                     <Link to={!user && '/login'} className="homelogin">
                     <span onClick={handleAhthentication} className="header_optionLineTwo">{user ? '로그아웃' : '로그인'}</span>
                     </Link>
-                </div>
-                <div className="header_option">
-                    <span className="header_optionLineOne">돌아가기</span>
-                    <span className="header_optionLineTwo">주문내역</span>
                 </div>
                 <div className="header_optionBasket">
                     <Link to="/checkout"><ShoppingBasket/>

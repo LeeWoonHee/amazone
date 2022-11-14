@@ -10,9 +10,9 @@
     object-fit: contain;
     width:200px;
 }
-.login_container>h1{
-    font-weight:800;
-    margin-bottom:40px;
+.login_container>form{
+
+    margin-top:40px;
 }
 .login_container>form>h5{
     margin-bottom:5px;
@@ -22,28 +22,39 @@
     margin-bottom:10px;
     background:white;
     width:98%;
+    border:1px solid #eee;
 }
-.login_container>p{
+.login_container p{
     margin:15px 0; 
-    font-size:10px;
+    font-size:12px;
 }
 .login_signInButton{
-    background:#61dafb;
+    background:darkgray;
     border-radius: 2px;
     width:100%;
     height:30px;
     border:1px solid;
     margin-top:10px;
-    border-color:#61dafb #f3f3f3 #a5a5f3;
+    border-color:darkgray;
     cursor:pointer;
+    color:#eeee;
+    font-weight:bold;
 }
 .login_registerButton{
-    background:#61dafb;
+    background:darkgray;
     border-radius: 2px;
     width:100%;
     height:30px;
     border:1px solid;
     margin-top:10px;
-    border-color:#b6c3e2;
+    border-color:darkgray;
     cursor:pointer;
+    color:#eeee;
+    font-weight:bold;
+}
+.formCheck{
+    display:flex;
+}
+.formCheck>input{
+    margin-left:10px;
 }

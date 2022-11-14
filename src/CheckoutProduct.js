@@ -3,8 +3,9 @@ import './CheckoutProduct.css'
 import { useStateVlue } from './StateProvider';
 
 function CheckoutProduct({id,image,title,price,rating}) {
-    const [{basket},dispatch]=useStateVlue();
+    const [dispatch]=useStateVlue();
     const removeFromBasket=()=>{
+        alert('장바구니에서 제거되었습니다.')
         dispatch({
             type:'REMOVE_FROM_BASKET',
             id:id,
